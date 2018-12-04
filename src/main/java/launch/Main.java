@@ -1,6 +1,7 @@
 package launch;
 
 import java.io.File;
+import servlet.Greeter;
 
 import org.apache.catalina.WebResourceRoot;
 import org.apache.catalina.core.StandardContext;
@@ -11,7 +12,10 @@ import org.apache.catalina.webresources.StandardRoot;
 public class Main {
 
     public static void main(String[] args) throws Exception {
-        System.out.print("STARTING...");
+
+        Greeter greeter = new Greeter();
+
+        System.out.println("STARTING...");
 
         String webappDirLocation = "src/main/webapp/";
         Tomcat tomcat = new Tomcat();
@@ -36,9 +40,12 @@ public class Main {
                 additionWebInfClasses.getAbsolutePath(), "/"));
         ctx.setResources(resources);
 
+
+        System.out.println("YEET!");
+
         tomcat.start();
         tomcat.getServer().await();
 
-        System.out.print("DONE!");
+
     }
 }
