@@ -20,7 +20,7 @@ public class HelloServlet extends HttpServlet {
     protected void doGet(HttpServletRequest req, HttpServletResponse resp)
             throws ServletException, IOException {
         ServletOutputStream out = resp.getOutputStream();
-        out.write("hello heroku<br>".getBytes());
+        out.write("hello heroku\n".getBytes());
         Greeter greeter = new Greeter();
         out.write(greeter.sayHello().getBytes());
         out.flush();

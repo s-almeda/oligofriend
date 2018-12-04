@@ -2,12 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3d08b39d-ad9a-4c3b-b58b-55a1949b4344" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/launch/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/launch/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/servlet/HelloServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/servlet/HelloServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/launch/Main.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/servlet/Greeter.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/servlet/HelloServlet.class" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -47,14 +42,14 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="Procfile" value="1" />
-          <entry key="java" value="339" />
+          <entry key="java" value="341" />
           <entry key="txt" value="41" />
           <entry key="xml" value="139" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="339" />
+          <entry key="JAVA" value="341" />
           <entry key="PLAIN_TEXT" value="42" />
           <entry key="XML" value="139" />
         </counts>
@@ -107,8 +102,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/servlet/HelloServlet.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="332">
-              <caret line="24" column="47" selection-start-line="24" selection-start-column="47" selection-end-line="24" selection-end-column="47" />
+            <state relative-caret-position="274">
+              <caret line="22" column="33" selection-start-line="22" selection-start-column="33" selection-end-line="22" selection-end-column="33" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -283,7 +278,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1543912228354" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1543912350703" />
     <property name="project.structure.last.edited" value="Facets" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -364,7 +359,7 @@
       <window_info id="UI Designer" />
       <window_info id="Capture Tool" />
       <window_info id="Favorites" side_tool="true" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.8385744" visible="true" weight="0.15837479" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.8385744" visible="true" weight="0.15837479" />
       <window_info id="Structure" order="1" sideWeight="0.16142558" side_tool="true" visible="true" weight="0.15837479" />
       <window_info anchor="bottom" id="Version Control" show_stripe_button="false" />
       <window_info anchor="bottom" id="Terminal" />
@@ -372,7 +367,7 @@
       <window_info anchor="bottom" id="Messages" weight="0.32894737" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32894737" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.23923445" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.23923445" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -566,8 +561,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/servlet/HelloServlet.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="332">
-          <caret line="24" column="47" selection-start-line="24" selection-start-column="47" selection-end-line="24" selection-end-column="47" />
+        <state relative-caret-position="274">
+          <caret line="22" column="33" selection-start-line="22" selection-start-column="33" selection-end-line="22" selection-end-column="33" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
