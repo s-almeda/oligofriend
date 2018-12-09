@@ -12,14 +12,5 @@
     <jsp:forward page="/employee" />
 
 
-    <form class="md-form">
-        <div class="file-field">
-            <div class="btn btn-outline-success btn-rounded waves-effect btn-sm float-left">
-                <span>Choose file</span>
-                <input type="file">
-            </div>
-            <div class="file-path-wrapper">
-               <input class="file-path validate" type="text" placeholder="Upload your file">
-            </div>
-        </div>
+
 </html>

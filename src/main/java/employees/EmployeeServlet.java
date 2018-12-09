@@ -21,8 +21,10 @@ import javax.servlet.http.HttpServletResponse;
 
 
 import org.apache.commons.fileupload.FileItem;
+import org.apache.commons.fileupload.FileUploadException;
 import org.apache.commons.fileupload.disk.DiskFileItemFactory;
 import org.apache.commons.fileupload.servlet.ServletFileUpload;
+
 
 @WebServlet(
         name = "EmployeeServlet",
@@ -54,12 +56,12 @@ public class EmployeeServlet extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 
         final String UPLOAD_DIRECTORY = "C:/uploads";
-
+  
         if (ServletFileUpload.isMultipartContent(request)) {
 
             try {
 
-                List multiparts = new ServletFileUpload(
+                List<FileItem> multiparts = new ServletFileUpload(
 
                         new DiskFileItemFactory()).parseRequest(request);
 
