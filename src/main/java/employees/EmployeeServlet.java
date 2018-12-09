@@ -56,7 +56,7 @@ public class EmployeeServlet extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 
         final String UPLOAD_DIRECTORY = "C:/uploads";
-  
+
         if (ServletFileUpload.isMultipartContent(request)) {
 
             try {
