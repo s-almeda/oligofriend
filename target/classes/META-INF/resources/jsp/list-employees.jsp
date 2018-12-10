@@ -33,7 +33,7 @@
                                     <span>Choose file</span>
                                     <input type="file" class="form-control-file" id="exampleFormControlFile1">
                                 </div>
-                               
+
                                 <div class="file-path-wrapper">
                                     <button type="submit" class="btn btn-primary btn-lg">
                                         <span class="glyphicon glyphicon-arrow-up"></span> Upload

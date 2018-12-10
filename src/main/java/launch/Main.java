@@ -9,7 +9,7 @@ import org.apache.catalina.startup.Tomcat;
 import org.apache.catalina.webresources.DirResourceSet;
 import org.apache.catalina.webresources.StandardRoot;
 import java.sql.*;
-import java.net.URISyntaxException;
+import java.net.*;
 
 public class Main {
 
