@@ -38,10 +38,21 @@
         <h4>Final Result:</h4>
         <p class = "lead">
         <div id="finalResultDiv" >
-            <when test="${not empty finalResult}">
-                <span>${finalResult}</span>
-            </when>
-        </div>
+        <c:choose>
+            <c:when test="${not empty finalResult}">
+                    <c:forEach var="result" items="${finalResult}">
+                        <span>${result}</span>
+                        <br></br>
+                    </c:forEach>
+            </c:when>
+            <c:otherwise>
+                <br>
+                <div class="alert alert-info">
+                    Sorry, we couldn't do that. Try again?
+                </div>
+            </c:otherwise>
+        </c:choose>
+    </div>
         </p>
         <form action ="/oligo" method = "get" id="return" role="form">
             <input type="hidden" id="returnFromResult" name="nextJSP" value="home">
@@ -50,7 +61,7 @@
 
                 <button type="submit" class="btn btn-primary btn-lg">
 
-                    Return
+                    Another!
                     <span class="glyphicon glyphicon-option-horizontal"></span>
                 </button>
 
