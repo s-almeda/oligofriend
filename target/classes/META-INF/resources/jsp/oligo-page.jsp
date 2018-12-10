@@ -16,68 +16,89 @@
 
         <link rel='stylesheet' href='webjars/bootstrap/3.2.0/css/bootstrap.min.css'>
         <script src="../js/bootstrap.min.js"></script>
+        <style>
+          body {
+            padding-top: 20px;
+            padding-left: 60px ;
+            padding-right: 60px;
+
+          }
+        </style>
 
     </head>
 
     <body>
+    <h1 class="display-2">Oligo Friend </h1>
 
-        <h2>Upload a FASTA File...</h2>
 
-         <div class="container">
-             <div class="row">
-                 <div class="col">
+    <div class="alert alert-success alert-dismissible fade show" role="alert">
+        <button type="submit" class="close" data-dismiss="alert" aria-label="Close">
+            Close This
+            <span aria-hidden="true">&times;</span>
+        </button>
+        <h1 class="display-3">Hello friend!</h1>
 
-                    <!--File Upload Form -->
-                    <form action="/oligo" method="get" id="uploadFASTAFile" role="form">
-                        <input type="hidden" id="fileOrText1" name="fileOrText" value="file">
-                        <div class="form-group col-xs-5">
-                            <input type="file" name="fileUpload" id="formControlFile" class="form-control-file" required="true" placeholder="Upload File..."/>
-                        </div>
-                        <button type="submit" class="btn btn-primary btn-lg" onclick="showDiv()">
-                            <span class="glyphicon glyphicon-arrow-up"></span> Upload
-                        </button>
-                        <br></br>
-                        <br></br>
-                    </form>
-                 </div>
+        <h4 class="display-4">This is Oligo Friend, an online tool for breakpoint and overlap visualization.</h4>
+        <hr class="my-4">
+        <p class="text-sm-left">Created by Sarah Almeda, Computer Science Major at TCNJ<br> for Dr. Papamichail's Algorithms in Computational Biology Course.<br> This project funded by CRA-W CREU Fall 2018- Spring 2019. <br></p>
 
-                 <!--Text Input Form -->
-                 <form action ="/oligo" method = "get" id="getGreetingText" role="form">
-                     <input type="hidden" id="fileOrText2" name="fileOrText" value="text">
-                     <div class="col order-12">
-                         <div class="form-group">
-                             <label for="exampleFormControlTextarea1">... Or Copy and Paste Sequence Here</label>
-                             <textarea name="textarea" class="form-control" required="true" id="exampleFormControlTextarea1" rows="6"  placeholder="Paste FASTA sequence here"></textarea>
-                         </div>
+    </div>
+
+        <div class="px-2">
+            <h2 class="p-3">Upload a FASTA File...</h2>
+
+             <div class="container">
+                 <div class="row">
+                     <div class="col">
+
+                        <!--File Upload Form -->
                          <br></br>
+                        <form action="/oligo" method="get" id="uploadFASTAFile" role="form">
+                            <input type="hidden" id="fileOrText1" name="fileOrText" value="file">
+                            <div class="form-group col-xs-5">
+                                <input type="file" name="fileUpload" id="formControlFile" class="form-control-file" required="true" placeholder="Upload File..."/>
+                            </div>
+                            <button type="submit" class="btn btn-primary btn-lg" onclick="showDiv()">
+                                <span class="glyphicon glyphicon-arrow-up"></span> Upload
+                            </button>
+                            <br></br>
+                            <br></br>
+                        </form>
+                     </div>
 
-                         <button type="submit" class="btn btn-primary btn-lg">
+                     <!--Text Input Form -->
+                     <form action ="/oligo" method = "get" id="getGreetingText" role="form">
+                         <input type="hidden" id="fileOrText2" name="fileOrText" value="text">
+                         <div class="col order-12">
+                             <div class="form-group">
+                                 <label for="exampleFormControlTextarea1">... Or Copy and Paste Sequence Here</label>
+                                 <textarea name="textInput" class="form-control" required="true" id="exampleFormControlTextarea1" rows="6"  placeholder="Paste FASTA sequence here"></textarea>
+                             </div>
+                             <br></br>
 
-                             Submit
-                             <span class="glyphicon glyphicon-option-horizontal"></span>
-                         </button>
+                             <button type="submit" class="btn btn-primary btn-lg">
 
-                    </div>
-                 </form>
+                                 Submit
+                                 <span class="glyphicon glyphicon-option-horizontal"></span>
+                             </button>
 
-
-
-
-
-            </div>
-         </div>
-
-         <!--RESULTS! -->
-
-         <h2>Final Result: </h2>
-         <div id="finalResultDiv" >
-             <when test="${not empty finalResult}">
-                 <span>${finalResult}</span>
-             </when>
-         </div>
+                        </div>
+                     </form>
 
 
 
+
+
+                </div>
+             </div>
+
+        </div>
+
+
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     </body>
 </html>
 

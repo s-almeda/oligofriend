@@ -43,22 +43,30 @@ public class OligoServlet extends HttpServlet {
                     forwardResult(req,resp,result);
                     break;
                 case "text":
-                    result = oligoService.uploadText();
+                    String input = req.getParameter("textInput");
+                    result = oligoService.uploadText(input);
                     forwardResult(req,resp,result);
                     break;
             }
         }
         else{
-            result = "null or something?";
+            result = null;
             forwardResult(req,resp,result);
         }
     }
 
     private void forwardResult(HttpServletRequest req, HttpServletResponse resp, String result)
             throws ServletException, IOException{
-        String nextJSP = "/jsp/oligo-page.jsp";
+        String nextJSP;
+        if (result!= null) {
+           nextJSP = "/jsp/results.jsp";
+        }
+        else
+        {  nextJSP = "/jsp/oligo-page.jsp";}
+
         RequestDispatcher dispatcher = getServletContext().getRequestDispatcher(nextJSP);
         req.setAttribute("finalResult", result);
+
         dispatcher.forward(req, resp);
     }
 
