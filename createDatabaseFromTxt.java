@@ -1,5 +1,3 @@
-
-
 import java.io.FileNotFoundException;
 import java.lang.String;
 import java.sql.*;
@@ -14,7 +12,7 @@ import java.util.Arrays;
 public class createDatabaseFromTxt {
     public static Connection conn;
     public static void main(String[] args) throws SQLException, FileNotFoundException {
-        connectToDatabase();
+        //connectToDatabase();
 
         StringBuilder rowInsert = new StringBuilder();
 
@@ -90,10 +88,10 @@ public class createDatabaseFromTxt {
             }
 
             String insertP1= "INSERT INTO MINSUPER (oligo_num,AA_subset,codon_ex," +
-                    "d1,AA_subset_1,c_1,codon_ex_1" +
-                    "d2,AA_subset_2,c_2,codon_ex_2" +
-                    "d3,AA_subset_3,c_3,codon_ex_3" +
-                    "d4,AA_subset_4,c_4,codon_ex_4" +
+                    "d1,AA_subset_1,c_1,codon_ex_1, " +
+                    " d2, AA_subset_2,c_2,codon_ex_2," +
+                    "d3,AA_subset_3,c_3,codon_ex_3," +
+                    "d4,AA_subset_4,c_4,codon_ex_4," +
                     "d5,AA_subset_5,c_5,codon_ex_5" +
                     ") VALUES (";
 
@@ -124,10 +122,11 @@ public class createDatabaseFromTxt {
 
 
 
-            System.out.println(rowInsert + ");\n");
+            rowInsert.append(");");
+            System.out.println(rowInsert);
 
-            Statement stmt = conn.createStatement();
-            stmt.executeUpdate(rowInsert.toString());
+            //Statement stmt = conn.createStatement();
+            //stmt.executeUpdate(rowInsert.toString());
 
 
 

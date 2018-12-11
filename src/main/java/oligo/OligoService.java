@@ -1,9 +1,13 @@
 package oligo;
 
+import java.io.File;
 import java.lang.String;
 import java.sql.*;
 import java.lang.StringBuilder;
 import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Scanner;
+
 public class OligoService {
 
     public String fileName = "testcases/GFP.fasta";
@@ -18,9 +22,14 @@ public class OligoService {
 
 
     public ArrayList<String> uploadFile() {
+
+
         ArrayList<String> result = new ArrayList<String>();
         result.add("INVALID");
         result.add("Sorry. I'm not done coding this part yet.");
+
+
+
         return result;
     }
 
@@ -35,7 +44,6 @@ public class OligoService {
 
     private ArrayList<String> letsOligo(String fastaSequence, int min_s, int max_s, int min_o, int max_o) throws SQLException{
 
-
         ArrayList<String> result = new ArrayList<String>();
         int n = fastaSequence.length(), i, start, overlap, j, k, oligoCost, lastOligoCost = 0;
         int[] cost = new int[n];
@@ -43,10 +51,10 @@ public class OligoService {
 
         if (fastaSequence == ""){
             return null;
-        } //System.out.print("fasta Sequence:" + fastaSequence);
+        } //System.out.print("fasta Sequence:" + fastaSequence + " n: " + n);
 
         int[] deCodons = getPosCosts(fastaSequence);
-        System.out.println("Done with creating deCodons");
+       // System.out.println("Done with creating deCodons");
 
         Node[] ptr = new Node[n];
         ptr[0] = new Node(-1, 0);
@@ -164,7 +172,6 @@ public class OligoService {
         while (rset.next()){
             oligoNum = Integer.parseInt(rset.getString("oligo_num"));
         }
-        //System.out.println("OLIGONUM: " + oligoNum + "\n");
 
         conn.close();
         return oligoNum;
@@ -359,6 +366,25 @@ public class OligoService {
         return cost * overlapCost * ((i+1) - (j));
 
     }  /*===== end of oligo_cost() function ==========*/
+
+
+
+
+
+
+
+
+
+
+
+    public static boolean isNumeric(String strNum) {
+        try {
+            int d = Integer.parseInt(strNum);
+        } catch (NumberFormatException | NullPointerException nfe) {
+            return false;
+        }
+        return true;
+    }
 
 
 }

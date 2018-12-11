@@ -54,13 +54,13 @@
 
                     <!--File Upload Form -->
 
-                    <form action="/oligo" method="get" id="uploadFASTAFile" role="form" class="needs-validation" novalidate>
+                    <form action="/oligo" method="post" id="uploadFASTAFile" role="form" class="needs-validation" novalidate enctype='multipart/form-data'>
                         <input type="hidden" id="fileOrText1" name="fileOrText" value="file">
 
                         <div class="form-group">
                             <div class="col-sm-offset-2 col-sm-10">
                                 <label class="file-upload btn btn-primary">
-                                    Browse ... <input type="file"  />
+                                    Browse ... <input type="file" name="file" />
                                 </label>
                                 <button type="submit" class="btn btn-primary btn-lg" onclick="handleClick();">
                                     <span class="glyphicon glyphicon-arrow-up"></span> Upload
@@ -73,7 +73,7 @@
                         <br></br>
                         <br></br>
 
-                        <!-- sizes -->
+                        <!-- sizes --
 
                         <div class="panel panel-default">
                             <div class="panel-heading">Sequence Parameters:</div>
@@ -110,7 +110,7 @@
                  <div class="panel panel-default">
                      <div class="panel-heading">...Or Copy and Paste Sequence (FASTA format) Here</div>
                      <div class = "panel-body">
-                     <form action ="/oligo" method = "get" id="getGreetingText" role="form">
+                     <form action ="/oligo" method = "post" id="getGreetingText" role="form">
 
                          <div class = "panel-body">
                              <input type="hidden" id="fileOrText2" name="fileOrText" value="text">
@@ -132,7 +132,7 @@
 
                         <!/div>
 
-                         <!-- sizes -->
+                         <!-- sizes --
 
                          <div class="panel panel-default">
                              <div class="panel-heading">Sequence Parameters:</div>
@@ -187,9 +187,9 @@
 
             <c:choose>
                 <c:when test="${not empty finalResult}">
-                    <h4>Results</h4>
+                    <h3>Results</h3>
                     <br>
-                    <p class = "lead">
+                    <p>
                     <c:forEach var="result" items="${finalResult}">
                         <span>${result}</span>
                         <br></br>
