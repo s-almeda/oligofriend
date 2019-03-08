@@ -6,8 +6,11 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="oligofriend" />
+        <module name="oligoFriend" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="oligoFriend" target="1.8" />
+    </bytecodeTargetLevel>
   </component>
 </project>
