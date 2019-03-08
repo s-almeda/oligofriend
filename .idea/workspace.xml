@@ -2,8 +2,133 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3d08b39d-ad9a-4c3b-b58b-55a1949b4344" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/an.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/dependency/bootstrap-3.2.0.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/dependency/commons-fileupload-1.3.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/dependency/commons-io-2.2.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/dependency/ecj-3.12.3.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/dependency/jstl-1.2.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/dependency/mdbootstrap-bootstrap-material-design-4.5.3.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/dependency/postgresql-42.2.1.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/dependency/tomcat-annotations-api-8.5.23.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/dependency/tomcat-api-8.5.23.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/dependency/tomcat-el-api-8.5.23.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/dependency/tomcat-embed-core-8.5.23.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/dependency/tomcat-embed-el-8.5.23.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/dependency/tomcat-embed-jasper-8.5.23.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/dependency/tomcat-jasper-8.5.23.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/dependency/tomcat-jasper-el-8.5.23.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/dependency/tomcat-jsp-api-8.5.23.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/dependency/tomcat-juli-8.5.23.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/dependency/tomcat-servlet-api-8.5.23.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/dependency/tomcat-util-8.5.23.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/dependency/tomcat-util-scan-8.5.23.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/heroku/app/.heroku-deploy" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/heroku/app/Procfile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/heroku/app/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/heroku/app/target/bin/webapp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/heroku/app/target/bin/webapp.bat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/heroku/app/target/classes/META-INF/resources/css/bootstrap-responsive.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/heroku/app/target/classes/META-INF/resources/css/bootstrap.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/heroku/app/target/classes/META-INF/resources/fileuploads/GFP.fasta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/heroku/app/target/classes/META-INF/resources/fileuploads/GFP2.fasta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/heroku/app/target/classes/META-INF/resources/fileuploads/aa.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/heroku/app/target/classes/META-INF/resources/fileuploads/codonSupersetSmall.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/heroku/app/target/classes/META-INF/resources/fileuploads/horse.fasta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/heroku/app/target/classes/META-INF/resources/fileuploads/salmon.fasta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/heroku/app/target/classes/META-INF/resources/img/glyphicons-halflings-white.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/heroku/app/target/classes/META-INF/resources/img/glyphicons-halflings.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/heroku/app/target/classes/META-INF/resources/index.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/heroku/app/target/classes/META-INF/resources/js/bootstrap.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/heroku/app/target/classes/META-INF/resources/jsp/list-employees.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/heroku/app/target/classes/META-INF/resources/jsp/oligo-page.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/heroku/app/target/classes/META-INF/resources/jsp/results.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/heroku/app/target/classes/launch/Main.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/heroku/app/target/classes/oligo/Node.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/heroku/app/target/classes/oligo/OligoService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/heroku/app/target/classes/oligo/OligoServlet.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/heroku/app/target/classes/servlet/Greeter.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/heroku/app/target/classes/servlet/HelloServlet.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/heroku/app/target/dependency/bootstrap-3.2.0.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/heroku/app/target/dependency/commons-fileupload-1.3.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/heroku/app/target/dependency/commons-io-2.2.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/heroku/app/target/dependency/ecj-3.12.3.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/heroku/app/target/dependency/jstl-1.2.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/heroku/app/target/dependency/mdbootstrap-bootstrap-material-design-4.5.3.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/heroku/app/target/dependency/postgresql-42.2.1.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/heroku/app/target/dependency/tomcat-annotations-api-8.5.23.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/heroku/app/target/dependency/tomcat-api-8.5.23.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/heroku/app/target/dependency/tomcat-el-api-8.5.23.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/heroku/app/target/dependency/tomcat-embed-core-8.5.23.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/heroku/app/target/dependency/tomcat-embed-el-8.5.23.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/heroku/app/target/dependency/tomcat-embed-jasper-8.5.23.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/heroku/app/target/dependency/tomcat-jasper-8.5.23.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/heroku/app/target/dependency/tomcat-jasper-el-8.5.23.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/heroku/app/target/dependency/tomcat-jsp-api-8.5.23.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/heroku/app/target/dependency/tomcat-juli-8.5.23.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/heroku/app/target/dependency/tomcat-servlet-api-8.5.23.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/heroku/app/target/dependency/tomcat-util-8.5.23.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/heroku/app/target/dependency/tomcat-util-scan-8.5.23.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/heroku/app/target/dependency/webapp-runner.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/heroku/app/target/maven-archiver/pom.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/heroku/app/target/mvn-dependency-list.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/heroku/app/target/oligoFriend.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/heroku/app/target/repo/com/shm/sample/oligoFriend/1.0-SNAPSHOT/oligoFriend-1.0-SNAPSHOT.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/heroku/app/target/repo/commons-fileupload/commons-fileupload/1.3/commons-fileupload-1.3.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/heroku/app/target/repo/commons-io/commons-io/2.2/commons-io-2.2.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/heroku/app/target/repo/jstl/jstl/1.2/jstl-1.2.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/heroku/app/target/repo/org/apache/tomcat/embed/tomcat-embed-core/8.5.23/tomcat-embed-core-8.5.23.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/heroku/app/target/repo/org/apache/tomcat/embed/tomcat-embed-el/8.5.23/tomcat-embed-el-8.5.23.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/heroku/app/target/repo/org/apache/tomcat/embed/tomcat-embed-jasper/8.5.23/tomcat-embed-jasper-8.5.23.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/heroku/app/target/repo/org/apache/tomcat/tomcat-annotations-api/8.5.23/tomcat-annotations-api-8.5.23.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/heroku/app/target/repo/org/apache/tomcat/tomcat-api/8.5.23/tomcat-api-8.5.23.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/heroku/app/target/repo/org/apache/tomcat/tomcat-el-api/8.5.23/tomcat-el-api-8.5.23.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/heroku/app/target/repo/org/apache/tomcat/tomcat-jasper-el/8.5.23/tomcat-jasper-el-8.5.23.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/heroku/app/target/repo/org/apache/tomcat/tomcat-jasper/8.5.23/tomcat-jasper-8.5.23.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/heroku/app/target/repo/org/apache/tomcat/tomcat-jsp-api/8.5.23/tomcat-jsp-api-8.5.23.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/heroku/app/target/repo/org/apache/tomcat/tomcat-juli/8.5.23/tomcat-juli-8.5.23.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/heroku/app/target/repo/org/apache/tomcat/tomcat-servlet-api/8.5.23/tomcat-servlet-api-8.5.23.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/heroku/app/target/repo/org/apache/tomcat/tomcat-util-scan/8.5.23/tomcat-util-scan-8.5.23.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/heroku/app/target/repo/org/apache/tomcat/tomcat-util/8.5.23/tomcat-util-8.5.23.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/heroku/app/target/repo/org/eclipse/jdt/ecj/3.12.3/ecj-3.12.3.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/heroku/app/target/repo/org/postgresql/postgresql/42.2.1/postgresql-42.2.1.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/heroku/app/target/repo/org/webjars/bootstrap/3.2.0/bootstrap-3.2.0.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/heroku/app/target/repo/org/webjars/mdbootstrap-bootstrap-material-design/4.5.3/mdbootstrap-bootstrap-material-design-4.5.3.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/mvn-dependency-list.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hello.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/heroku/app/target/classes/META-INF/resources/fileuploads/hello.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/employees/Employee.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/employees/EmployeeList.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/employees/EmployeeService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/employees/EmployeeServlet.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/servlet/GreeterTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/createDatabaseFromTxt.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/employees/Employee.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/employees/EmployeeList.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/employees/EmployeeService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/employees/EmployeeServlet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/oligo/createDatabaseFromTxt.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-archiver/pom.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/oligoFriend.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/oligoFriend.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/repo/aopalliance/aopalliance/1.0/aopalliance-1.0.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/repo/com/shm/sample/oligoFriend/1.0-SNAPSHOT/oligoFriend-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/repo/com/shm/sample/oligoFriend/1.0-SNAPSHOT/oligoFriend-1.0-SNAPSHOT.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/repo/commons-logging/commons-logging/1.1.1/commons-logging-1.1.1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/repo/org/springframework/spring-aop/3.0.5.RELEASE/spring-aop-3.0.5.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/repo/org/springframework/spring-asm/3.0.5.RELEASE/spring-asm-3.0.5.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/repo/org/springframework/spring-beans/3.0.5.RELEASE/spring-beans-3.0.5.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/repo/org/springframework/spring-context-support/3.0.5.RELEASE/spring-context-support-3.0.5.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/repo/org/springframework/spring-context/3.0.5.RELEASE/spring-context-3.0.5.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/repo/org/springframework/spring-core/3.0.5.RELEASE/spring-core-3.0.5.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/repo/org/springframework/spring-expression/3.0.5.RELEASE/spring-expression-3.0.5.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/repo/org/springframework/spring-web/3.0.5.RELEASE/spring-web-3.0.5.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/repo/org/springframework/spring-webmvc/3.0.5.RELEASE/spring-webmvc-3.0.5.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-servlet.GreeterTest.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/servlet.GreeterTest.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/servlet/GreeterTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tomcat.5000/work/Tomcat/localhost/ROOT/org/apache/jsp/jsp/oligo_002dpage_jsp.class" beforeDir="false" afterPath="$PROJECT_DIR$/tomcat.5000/work/Tomcat/localhost/ROOT/org/apache/jsp/jsp/oligo_002dpage_jsp.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tomcat.5000/work/Tomcat/localhost/ROOT/org/apache/jsp/jsp/oligo_002dpage_jsp.java" beforeDir="false" afterPath="$PROJECT_DIR$/tomcat.5000/work/Tomcat/localhost/ROOT/org/apache/jsp/jsp/oligo_002dpage_jsp.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -27,25 +152,26 @@
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="Procfile" value="3" />
-          <entry key="class" value="10" />
+          <entry key="class" value="11" />
           <entry key="css" value="2" />
           <entry key="html" value="1" />
-          <entry key="java" value="28" />
+          <entry key="java" value="30" />
           <entry key="jsp" value="9" />
-          <entry key="jsx" value="1" />
+          <entry key="jsx" value="2" />
+          <entry key="txt" value="1" />
           <entry key="webapp" value="2" />
-          <entry key="xml" value="1" />
+          <entry key="xml" value="2" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="CLASS" value="10" />
+          <entry key="CLASS" value="11" />
           <entry key="CSS" value="2" />
           <entry key="HTML" value="7" />
-          <entry key="JAVA" value="28" />
-          <entry key="JSP" value="4" />
-          <entry key="PLAIN_TEXT" value="5" />
-          <entry key="XML" value="1" />
+          <entry key="JAVA" value="30" />
+          <entry key="JSP" value="5" />
+          <entry key="PLAIN_TEXT" value="6" />
+          <entry key="XML" value="2" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
@@ -53,8 +179,8 @@
           <entry key="Procfile" value="1" />
           <entry key="java" value="9811" />
           <entry key="jsp" value="3400" />
-          <entry key="txt" value="71" />
-          <entry key="xml" value="188" />
+          <entry key="txt" value="134" />
+          <entry key="xml" value="189" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
@@ -62,8 +188,8 @@
           <entry key="HTML" value="3155" />
           <entry key="JAVA" value="9811" />
           <entry key="JSP" value="245" />
-          <entry key="PLAIN_TEXT" value="72" />
-          <entry key="XML" value="188" />
+          <entry key="PLAIN_TEXT" value="135" />
+          <entry key="XML" value="189" />
         </counts>
       </usages-collector>
     </session>
@@ -73,11 +199,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/launch/Main.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="544">
-              <caret line="50" column="5" lean-forward="true" selection-start-line="50" selection-start-column="5" selection-end-line="50" selection-end-column="5" />
+              <caret line="50" column="5" selection-start-line="50" selection-start-column="5" selection-end-line="50" selection-end-column="5" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -86,19 +212,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/tomcat.5000/work/Tomcat/localhost/ROOT/org/apache/jsp/jsp/results_jsp.class">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2085">
-              <caret line="177" selection-start-line="177" selection-end-line="177" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/oligo/OligoService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1080">
-              <caret line="78" column="29" selection-start-line="78" selection-start-column="29" selection-end-line="78" selection-end-column="29" />
+            <state relative-caret-position="51">
+              <caret line="359" column="84" selection-start-line="359" selection-start-column="84" selection-end-line="359" selection-end-column="84" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="method#processInput#0;class#OligoService#0" />
@@ -110,15 +227,28 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/createDatabaseFromTxt.class">
-          <provider selected="true" editor-type-id="text-editor" />
+        <entry file="file://$PROJECT_DIR$/pom.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="282">
+              <caret line="145" selection-start-line="145" selection-end-line="145" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/oligo/OligoServlet.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-821">
+              <caret line="91" selection-start-line="91" selection-end-line="91" />
+            </state>
+          </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/jsp/results.jsp">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="825">
-              <caret line="55" column="12" lean-forward="true" selection-start-line="55" selection-start-column="12" selection-end-line="55" selection-end-column="12" />
+              <caret line="55" column="12" selection-start-line="55" selection-start-column="12" selection-end-line="55" selection-end-column="12" />
             </state>
           </provider>
         </entry>
@@ -133,22 +263,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/servlet/GreeterTest.java">
+        <entry file="file://$PROJECT_DIR$/src/main/jsx/app.jsx">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="165">
-              <caret line="16" column="1" lean-forward="true" selection-start-line="16" selection-start-column="1" selection-end-line="16" selection-end-column="1" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/createDatabaseFromTxt.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1230">
-              <caret line="91" column="26" selection-start-line="91" selection-start-column="26" selection-end-line="91" selection-end-column="26" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="150">
+              <caret line="10" column="1" selection-end-line="10" selection-end-column="1" />
             </state>
           </provider>
         </entry>
@@ -156,17 +274,26 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/jsp/oligo-page.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-2036">
+            <state relative-caret-position="1215">
               <caret line="81" column="79" selection-start-line="81" selection-start-column="79" selection-end-line="81" selection-end-column="79" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/oligo/Node.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="30">
+              <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/jsp/list-employees.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="394">
-              <caret line="115" selection-start-line="115" selection-end-line="116" />
+            <state relative-caret-position="1365">
+              <caret line="105" column="36" selection-start-line="105" selection-start-column="36" selection-end-line="105" selection-end-column="36" />
             </state>
           </provider>
         </entry>
@@ -211,6 +338,7 @@
       <find>get</find>
       <find>spring</find>
       <find>getFileName</find>
+      <find>getMinD</find>
     </findStrings>
     <replaceStrings>
       <replace>,</replace>
@@ -305,14 +433,6 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="employees" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="oligofriend" type="b2602c69:ProjectViewProjectNode" />
-              <item name="oligofriend" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="launch" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -322,6 +442,13 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="oligo" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="oligofriend" type="b2602c69:ProjectViewProjectNode" />
+              <item name="oligofriend" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="jsx" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="oligofriend" type="b2602c69:ProjectViewProjectNode" />
@@ -341,27 +468,6 @@
             <path>
               <item name="oligofriend" type="b2602c69:ProjectViewProjectNode" />
               <item name="oligofriend" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="oligofriend" type="b2602c69:ProjectViewProjectNode" />
-              <item name="oligofriend" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="oligofriend" type="b2602c69:ProjectViewProjectNode" />
-              <item name="oligofriend" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="servlet" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="oligofriend" type="b2602c69:ProjectViewProjectNode" />
-              <item name="oligofriend" type="462c0819:PsiDirectoryNode" />
               <item name="target" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
@@ -372,8 +478,8 @@
   </component>
   <component name="PropertiesComponent">
     <property name="SearchEverywhereHistoryKey" value="&#9;FILE&#9;file:///Users/Sarah/Documents/COMPBIOFINAL/tutorial/oligofriend/src/main/java/oligo/OligoService.java" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1544578203988" />
-    <property name="project.structure.last.edited" value="Modules" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1552076711672" />
+    <property name="project.structure.last.edited" value="Problems" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="preferences.fileTypes" />
@@ -489,14 +595,21 @@
       <option name="project" value="LOCAL" />
       <updated>1543909090193</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="finished prototype">
+      <created>1552071515733</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1552071515733</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="47" y="23" width="1057" height="773" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.8370044" visible="true" weight="0.19901478" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.8370044" visible="true" weight="0.19901478" />
       <window_info id="Structure" order="1" sideWeight="0.16299559" side_tool="true" weight="0.191133" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -504,9 +617,9 @@
       <window_info id="Capture Tool" order="5" />
       <window_info id="Favorites" order="6" sideWeight="0.16005874" side_tool="true" weight="0.18817735" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.32894737" />
+      <window_info active="true" anchor="bottom" id="Find" order="1" visible="true" weight="0.32892805" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.32892805" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.39941263" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -558,7 +671,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="initial hello world test" />
     <MESSAGE value="Procfile" />
-    <option name="LAST_COMMIT_MESSAGE" value="Procfile" />
+    <MESSAGE value="finished prototype" />
+    <option name="LAST_COMMIT_MESSAGE" value="finished prototype" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -643,13 +757,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/jsx/app.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" column="1" selection-end-line="10" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/employees/EmployeeList.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="210">
@@ -694,9 +801,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/oligo/Node.java">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/employees/Employee.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="135">
@@ -724,37 +828,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="169">
-          <caret line="93" column="8" selection-start-line="93" selection-start-column="8" selection-end-line="93" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/oligo/OligoServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="124">
-          <caret line="91" lean-forward="true" selection-start-line="91" selection-end-line="91" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/tomcat.5000/work/Tomcat/localhost/ROOT/org/apache/jsp/jsp/results_jsp.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2085">
           <caret line="177" selection-start-line="177" selection-end-line="177" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/oligo/OligoService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1080">
-          <caret line="78" column="29" selection-start-line="78" selection-start-column="29" selection-end-line="78" selection-end-column="29" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#processInput#0;class#OligoService#0" />
-            <element signature="method#getAAIndex#0;class#OligoService#0" />
-            <element signature="method#getPosCosts#0;class#OligoService#0" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -771,31 +848,61 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/jsp/results.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="825">
+          <caret line="55" column="12" selection-start-line="55" selection-start-column="12" selection-end-line="55" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/launch/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="544">
+          <caret line="50" column="5" selection-start-line="50" selection-start-column="5" selection-end-line="50" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/jsp/oligo-page.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2036">
+        <state relative-caret-position="1215">
           <caret line="81" column="79" selection-start-line="81" selection-start-column="79" selection-end-line="81" selection-end-column="79" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/jsp/list-employees.jsp">
+    <entry file="file://$PROJECT_DIR$/src/main/java/oligo/OligoService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="394">
-          <caret line="115" selection-start-line="115" selection-end-line="116" />
+        <state relative-caret-position="51">
+          <caret line="359" column="84" selection-start-line="359" selection-start-column="84" selection-end-line="359" selection-end-column="84" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#processInput#0;class#OligoService#0" />
+            <element signature="method#getAAIndex#0;class#OligoService#0" />
+            <element signature="method#getPosCosts#0;class#OligoService#0" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/jsp/results.jsp">
+    <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="825">
-          <caret line="55" column="12" lean-forward="true" selection-start-line="55" selection-start-column="12" selection-end-line="55" selection-end-column="12" />
+        <state relative-caret-position="282">
+          <caret line="145" selection-start-line="145" selection-end-line="145" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/index.jsp">
+    <entry file="file://$PROJECT_DIR$/src/main/java/oligo/Node.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="15" column="7" selection-start-line="15" selection-start-column="7" selection-end-line="15" selection-end-column="7" />
+        <state relative-caret-position="30">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/oligo/OligoServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-821">
+          <caret line="91" selection-start-line="91" selection-end-line="91" />
         </state>
       </provider>
     </entry>
@@ -806,13 +913,36 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/launch/Main.java">
+    <entry file="file://$PROJECT_DIR$/target/test-classes/servlet/GreeterTest.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="544">
-          <caret line="50" column="5" lean-forward="true" selection-start-line="50" selection-start-column="5" selection-end-line="50" selection-end-column="5" />
+        <state>
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="e#0#459#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hello.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/index.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="15" column="7" selection-start-line="15" selection-start-column="7" selection-end-line="15" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/jsx/app.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" column="1" selection-end-line="10" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/jsp/list-employees.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1365">
+          <caret line="105" column="36" selection-start-line="105" selection-start-column="36" selection-end-line="105" selection-end-column="36" />
         </state>
       </provider>
     </entry>

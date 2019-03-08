@@ -1,0 +1,23 @@
+
+The following files have been resolved:
+   org.apache.tomcat.embed:tomcat-embed-jasper:jar:8.5.23:compile
+   org.apache.tomcat:tomcat-api:jar:8.5.23:compile
+   org.postgresql:postgresql:jar:42.2.1:compile
+   org.eclipse.jdt:ecj:jar:3.12.3:compile
+   org.apache.tomcat:tomcat-jasper-el:jar:8.5.23:compile
+   org.apache.tomcat.embed:tomcat-embed-el:jar:8.5.23:compile
+   org.apache.tomcat:tomcat-util:jar:8.5.23:compile
+   org.apache.tomcat:tomcat-servlet-api:jar:8.5.23:compile
+   org.webjars:mdbootstrap-bootstrap-material-design:jar:4.5.3:compile
+   org.apache.tomcat:tomcat-jsp-api:jar:8.5.23:compile
+   org.webjars:bootstrap:jar:3.2.0:compile
+   commons-io:commons-io:jar:2.2:compile
+   org.apache.tomcat:tomcat-util-scan:jar:8.5.23:compile
+   jstl:jstl:jar:1.2:compile
+   commons-fileupload:commons-fileupload:jar:1.3:compile
+   org.apache.tomcat:tomcat-annotations-api:jar:8.5.23:compile
+   org.apache.tomcat:tomcat-el-api:jar:8.5.23:compile
+   org.apache.tomcat.embed:tomcat-embed-core:jar:8.5.23:compile
+   org.apache.tomcat:tomcat-juli:jar:8.5.23:compile
+   org.apache.tomcat:tomcat-jasper:jar:8.5.23:compile
+
