@@ -1,23 +1,19 @@
 package oligo;
 
-public class Node
-{
-	int parent;
-	int overlap;
+class Node {
+    private int parent;
+    private int overlap;
 
-	public Node(int p, int o)
-	{
-		parent = p;
-		overlap = o;
-	}
+    Node(int p, int o) {
+        parent = p;
+        overlap = o;
+    }
 
-	public int getParent()
-	{
-		return parent;
-	}
+    public int getParent() {
+        return parent;
+    }
 
-	public int getOverlap()
-	{
-		return overlap;
-	}
+    public int getOverlap() {
+        return overlap;
+    }
 }

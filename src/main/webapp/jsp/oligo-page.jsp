@@ -2,6 +2,7 @@
 <!doctype html>
 <html lang="en">
     <head>
+        <title>Oligo Friend</title>
 
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -18,24 +19,18 @@
         <script src="../js/bootstrap.min.js"></script>
         <style>
           body {
-            padding-top: 20px;
-            padding-left: 60px ;
-            padding-right: 60px;
-            padding-bottom: 60px;
-
+              padding: 20px 60px 60px;
           }
         </style>
 
 
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-
-
     </head>
 
     <body>
 
-    <h1 class="display-2">Oligo Friend </h1>
+    <h1 class="display-2">Oligo Friend</h1>
 
 
 
