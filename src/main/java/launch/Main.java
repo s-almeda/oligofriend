@@ -1,8 +1,6 @@
 package launch;
 
 import java.io.File;
-import servlet.Greeter;
-
 import org.apache.catalina.WebResourceRoot;
 import org.apache.catalina.core.StandardContext;
 import org.apache.catalina.startup.Tomcat;
