@@ -1,27 +1,24 @@
 package launch;
 
 import java.io.File;
+
 import org.apache.catalina.WebResourceRoot;
 import org.apache.catalina.core.StandardContext;
 import org.apache.catalina.startup.Tomcat;
 import org.apache.catalina.webresources.DirResourceSet;
 import org.apache.catalina.webresources.StandardRoot;
 
-
 public class Main {
     public static void main(String[] args) throws Exception {
-
-
         System.out.println("STARTING...");
 
         String webappDirLocation = "src/main/webapp/";
         Tomcat tomcat = new Tomcat();
 
-
         //The port that we should run on can be set into an environment variable
         //Look for that variable and default to 8080 if it isn't there.
         String webPort = System.getenv("PORT");
-        if(webPort == null) {
+        if (webPort == null) {
             webPort = "8080";
         }
 
@@ -43,7 +40,5 @@ public class Main {
 
         tomcat.start();
         tomcat.getServer().await();
-
-
     }
 }
