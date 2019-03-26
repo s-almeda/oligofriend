@@ -33,8 +33,10 @@
                                 <button type="submit" class="btn btn-primary btn-lg" onclick="handleClick();">
                                     <span class="glyphicon glyphicon-arrow-up"></span> Upload
                                 </button>
+                                <br>
                             </div>
                         </div>
+
                         <br>
                         <br>
                     </form>
