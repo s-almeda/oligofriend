@@ -4,7 +4,7 @@
     <groupId>com.shm.sample</groupId>
     <artifactId>oligoFriend</artifactId>
     <version>1.0-SNAPSHOT</version>
-    <packaging>jar</packaging>
+    <packaging>war</packaging>
     <name>oligoFriend</name>
     <url>http://maven.apache.org</url>
     <properties>
