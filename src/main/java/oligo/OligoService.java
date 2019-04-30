@@ -7,11 +7,22 @@ class OligoService {
     private Connection conn;
 
     ArrayList<String> uploadText(String textInput, int minS, int maxS, int minO, int maxO) throws SQLException {
-        return letsOligo(processInput(textInput), minS, maxS, minO, maxO);
+        ArrayList<String> result = new ArrayList<>();
+        if (textInput.charAt(0) != '>'){
+            //Not a properly formatted FASTA file!
+            result.add("FASTA file not properly formatted.");
+            return result;
+        }
+        System.out.println("INPUT RECEIVED, SENDING TO PROCESS: " + textInput);
+        result = letsOligo(processInput(textInput), minS, maxS, minO, maxO);
+        System.out.println("result size: " + result.size());
+        return result;
     }
 
 
     private ArrayList<String> letsOligo(String fastaSequence, int minS, int maxS, int minO, int maxO) throws SQLException {
+        //DEBUG STATEMENT FLAGS
+        int printIterationIndices = 0, printCostofEachOligo = 0, printOptimalCosts = 0, printFinalSequence = 1;
         ArrayList<String> result = new ArrayList<>();
 
         int n = fastaSequence.length(), i, start, overlap, j, k, oligoCost, lastOligoCost;
@@ -63,6 +74,14 @@ class OligoService {
 
                     oligoCost = oligo_cost(start, i, overlap, deCodons);
 
+
+                    if (printIterationIndices == 1)
+                        System.out.print(" k: " + k);
+                    if (printCostofEachOligo== 1){
+                        System.out.print(" - cost of oligo ending at " + i + " starting at " + start + " with an overlap of size " + overlap + " is: ");
+                        System.out.println(oligoCost);
+                    }
+
                     if ((start + overlap) == 0) // if we're looking at the first oligo. there is no prior oligo
                     {
                         lastOligoCost = 0;
@@ -75,6 +94,20 @@ class OligoService {
                         ptr[i] = new Node((start + overlap - 1), overlap); // Subtract 1 to get where the last oligo ends
                     }
                 }
+            }
+            if (printOptimalCosts== 1)
+                System.out.println("Optimal Cost for an oligo ending at " + i  + ": " + cost[i]);
+
+        }
+        if (printFinalSequence == 1){
+            int pos = n-1;
+            while(pos >= 0)
+            {
+
+                System.out.println(pos + " with overlap " + ptr[pos].getOverlap());
+                String a = pos + " with overlap " + ptr[pos].getOverlap();
+                result.add(a);
+                pos = ptr[pos].getParent();
             }
         }
 
@@ -107,6 +140,7 @@ class OligoService {
     }
 
     private String processInput(String textInput) {
+        System.out.println("textInput: " + textInput);
         int index = textInput.indexOf("\n");
         return index == -1 ? textInput : textInput.substring(index + 1);
     }

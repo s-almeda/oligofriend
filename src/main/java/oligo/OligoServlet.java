@@ -39,6 +39,7 @@ public class OligoServlet extends HttpServlet {
         ArrayList<String> result = new ArrayList<>();
 
         if (ServletFileUpload.isMultipartContent(req)) {
+            System.out.println("FILE UPLOAD");
             int min_s = 90;
             int max_s = 100;
             int min_o = 25;
@@ -48,38 +49,25 @@ public class OligoServlet extends HttpServlet {
             ServletFileUpload upload = new ServletFileUpload(factory);
 
             try {
+
                 List<FileItem> items = upload.parseRequest(req);
                 for (FileItem item : items) {
-                    if (!item.isFormField()) {
-                        String fileName = item.getName();
-
-                        String root = getServletContext().getRealPath("/");
-                        File path = new File(root + "/fileuploads");
-
-                        File uploadedFile = new File(path + "/" + fileName);
-                        item.write(uploadedFile);
-
-                        long fileSize = uploadedFile.length();
-                        byte[] b = new byte[(int) fileSize];
-                        item.getInputStream().read(b);
-                        char[] a = new char[(int) fileSize];
-                        for (int i = 0; i < fileSize; i++) {
-                            a[i] = (char) b[i];
-                            if ((char) b[i] == 0)
-                                break;
-                        }
-                        String input = new String(a);
-                        System.out.print(input);
-                        try {
-                            result = oligoService.uploadText(input, min_s, max_s, min_o, max_o);
-                        } catch (Exception e) {
-                            result = null;
-                        }
+                    System.out.println("parsing uploaded file contents: " + item.getString());
+                    String fileContents = item.getString();
+                    try {
+                        result = oligoService.uploadText(fileContents, min_s, max_s, min_o, max_o);
+                    } catch (Exception e) {
+                        result = null;
                     }
                 }
+
             } catch (Exception ignored) {
             }
+            System.out.println("forwarding file..., result size:" + result.size());
+            forwardResult(req, resp, result);
+            return;
         } else {
+            System.out.println("TEXTINPUT");
             String input = req.getParameter("textInput");
                     /*int min_s = Integer.parseInt(req.getParameter("min_s"));
                     int max_s = Integer.parseInt(req.getParameter("max_s"));
@@ -92,25 +80,31 @@ public class OligoServlet extends HttpServlet {
             int max_o = 60;
 
             try {
+                System.out.println("submitting text input");
                 result = oligoService.uploadText(input, min_s, max_s, min_o, max_o);
+
             } catch (Exception e) {
                 result = null;
             }
 
+            //System.out.println("forwarding text..., result size:" + result.size());
             forwardResult(req, resp, result);
+            //return;
 
         }
 
-
-        forwardResult(req, resp, result);
+       // System.out.println("forwarding file..., result size:" + result.size());
+       // forwardResult(req, resp, result);
 
     }
 
     private void forwardResult(HttpServletRequest req, HttpServletResponse resp, ArrayList<String> result)
             throws ServletException, IOException {
+        //System.out.println("forwardResult, result size:" + result.size());
         String nextJSP;
         int submitted;
         if (result == null) {
+            System.out.println("RESULT IS NULL");
             submitted = -1;
             nextJSP = "/jsp/oligo-page.jsp";
         } else {
