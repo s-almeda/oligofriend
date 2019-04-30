@@ -38,6 +38,7 @@ public class OligoServlet extends HttpServlet {
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         ArrayList<String> result = new ArrayList<>();
 
+
         if (ServletFileUpload.isMultipartContent(req)) {
             System.out.println("FILE UPLOAD");
             int min_s = 90;
@@ -61,9 +62,14 @@ public class OligoServlet extends HttpServlet {
                     }
                 }
 
-            } catch (Exception ignored) {
+            } catch (Exception e) {
+                System.out.println("NO FILE UPLOADED");
+                result.add("No File Uploaded");
+                forwardResult(req, resp, result);
+                return;
+
             }
-            System.out.println("forwarding file..., result size:" + result.size());
+            //System.out.println("forwarding file..., result size:" + result.size());
             forwardResult(req, resp, result);
             return;
         } else {

@@ -35,7 +35,7 @@
 
     <!--RESULTS! -->
 
-        <h4>Final Result:</h4>
+        <h4>Final Result ASDFJKLASDF TESTING:</h4>
         <p class = "lead">
         <div id="finalResultDiv" >
         <c:choose>
